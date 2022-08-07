@@ -15,16 +15,132 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-    <style></style>
+    <style>
+      .why {
+        display: flex;
+        width: 100vw;
+      }
+      .why-content-image {
+        flex: 1;
+      }
+      .why-content-notes {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .roadmap-frontend {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
     <div class="reveal">
       <div class="slides">
-        <section><section>World Why Web?</section></section>
         <section>
-          <section>Who is it for?</section>
-          <section>It's for everyone (who is willing to learn)</section>
+          <section><h1>World Why Web?</h1></section>
+          <section>
+            <div class="why">
+              <div class="why-content-image">
+                <img src="./images/give me that website.jpg" />
+              </div>
+              <div class="why-content-notes">
+                <h2>Everybody</h2>
+                <p class="fragment fade-in-then-out">wants one</p>
+                <p class="fragment fade-in-then-out">needs one</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Good compensation</h2>
+            <p class="fragment fade-up">If you plan your career wisely</p>
+          </section>
+        </section>
+        <section>
+          <h1>Who is it for?</h1>
+          <p class="fragment fade-up">
+            It's for everyone (who is willing to learn)
+          </p>
+        </section>
+        <section>
+          <section>
+            <h1>Where Should I start?</h1>
+            <a
+              href="https://roadmap.sh/"
+              target="_blank"
+              rel="noreferrer nofollow noopener"
+              >roadmaps</a
+            >
+          </section>
+          <section>Pick your <del>poison</del> Position</section>
+          <section>
+            <div class="roadmap-frontend">
+              <h2>Frontend Developer</h2>
+              <div class="r-stack">
+                <img
+                  src="./images/frontend developer.jpg"
+                  alt=""
+                  height="540"
+                  width="450"
+                  class="fragment fade-in-then-out"
+                />
+                <img
+                  src="./images/new framework.jfif"
+                  alt=""
+                  height="540"
+                  width="450"
+                  class="fragment fade-in-then-out"
+                />
+                <img
+                  src="./images/dark side frontend.jpeg"
+                  alt=""
+                  height="540"
+                  width="450"
+                  class="fragment fade-in-then-out"
+                />
+                <iframe
+                  src="https://roadmap.sh/frontend"
+                  title="frontend"
+                  height="540"
+                  width="1440"
+                  class="fragment fade-in-then-out"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="roadmap-frontend">
+              <h2>Backend Developer</h2>
+              <div class="r-stack">
+                <img
+                  src="./images/backend.jfif"
+                  alt=""
+                  height="540"
+                  width="450"
+                  class="fragment fade-in-then-out"
+                />
+                <img
+                  src="./images/backend.webp"
+                  alt=""
+                  height="540"
+                  width="450"
+                  class="fragment fade-in-then-out"
+                />
+                <iframe
+                  src="https://roadmap.sh/backend"
+                  title="frontend"
+                  height="540"
+                  width="1440"
+                  class="fragment fade-in-then-out"
+                ></iframe>
+              </div>
+            </div>
+          </section>
         </section>
         <!-- 
 Why web development?
@@ -106,9 +222,9 @@ Soft Skills
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        margin: 0.04,
       });
     </script>
   </body>
